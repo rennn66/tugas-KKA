@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pendidikan Indonesia — Tugas KKA X.1</title>
+  <meta name="description" content="Portal berita pendidikan: kebijakan, dana BOS, pemulihan pembelajaran pasca-COVID, dan kesenjangan digital di Indonesia." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>">
+
+  <style>
+    /* Reset ringan */
+    *{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --accent:#c0392b;
+      --muted:#6b6b6b;
+      --bg:#f6f7f9;
+      --card:#ffffff;
+      --maxw:1100px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+
+    body{background:var(--bg);color:#111;line-height:1.6}
+    .container{max-width:var(--maxw);margin:28px auto;padding:0 18px}
+    header.site{display:flex;align-items:center;gap:18px;margin-bottom:18px}
+    .logo{display:flex;flex-direction:column;gap:2px}
+    .logo h1{font-size:20px;color:var(--accent);letter-spacing:.5px}
+    .logo p{font-size:12px;color:var(--muted)}
+
+    nav.main{margin-left:auto}
+    nav.main a{margin-left:14px;color:#222;text-decoration:none;font-weight:600;font-size:14px}
+    nav.main a:hover{text-decoration:underline}
+
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:18px;margin-bottom:18px}
+    .hero .lead{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(15,15,15,0.05)}
+    .lead h2{font-size:20px;margin-bottom:8px}
+    .lead p.lead-ex{color:var(--muted);margin-bottom:12px}
+
+    .lead .meta{font-size:13px;color:var(--muted);margin-bottom:10px}
+    .lead .readmore{display:inline-block;padding:8px 12px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
+
+    .side-card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 6px 18px rgba(15,15,15,0.04)}
+    .side-card h3{font-size:16px;margin-bottom:8px}
+    .card-list{display:flex;flex-direction:column;gap:10px}
+    .card-item{display:flex;gap:10px;align-items:center}
+    .thumb{width:72px;height:48px;background:#ddd;border-radius:6px;flex-shrink:0;display:flex;align-items:center;justify-content:center;color:#666;font-size:12px}
+
+    main.grid{display:grid;grid-template-columns:1fr 320px;gap:18px}
+    .articles{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
+    article.card{background:var(--card);padding:14px;border-radius:10px;box-shadow:0 6px 18px rgba(15,15,15,0.04)}
+    article.card h4{font-size:16px;margin-bottom:8px}
+    article.card p{color:var(--muted);font-size:14px;margin-bottom:10px}
+    .meta-line{font-size:13px;color:var(--muted);display:flex;justify-content:space-between;gap:8px}
+    .tag{font-size:12px;padding:6px 8px;border-radius:999px;background:#f0f0f0;color:#444}
+
+    aside.sidebar{display:flex;flex-direction:column;gap:12px}
+    .search{background:var(--card);padding:12px;border-radius:10px}
+    .search input{width:100%;padding:10px;border-radius:8px;border:1px solid #e3e3e3}
+    .popular{background:var(--card);padding:12px;border-radius:10px}
+    footer{margin-top:20px;text-align:center;color:var(--muted);font-size:13px;padding-bottom:30px}
+
+    /* responsive */
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr}
+      main.grid{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="site" role="banner">
+      <div class="logo" aria-hidden="false">
+        <h1>Pendidikan Indonesia</h1>
+        <p>Berita & laporan lapangan — fokus: pendidikan Indonesia</p>
+      </div>
+
+      <nav class="main" role="navigation" aria-label="Main menu">
+        <a href="#">Beranda</a>
+        <a href="#">Kebijakan</a>
+        <a href="#">Sekolah & Guru</a>
+        <a href="#">Teknologi</a>
+        <a href="#">Opini</a>
+      </nav>
+    </header>
+
+    <section class="hero" aria-labelledby="headline"><div class="lead" id="headline">
+  <div class="meta">Terakhir diperbarui: <time id="updatedAt"></time></div>
+  <h2>Program <em>Merdeka Belajar</em> dan tantangannya di lapangan</h2>
+
+  <p class="lead-ex">
+    Pemerintah melalui Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi sejak 2019 menggulirkan kebijakan “Merdeka Belajar”. 
+    Tujuannya adalah memberi keleluasaan bagi satuan pendidikan untuk menyesuaikan kurikulum sesuai kebutuhan siswa, 
+    termasuk mendorong pembelajaran berbasis projek yang menekankan kreativitas dan keterampilan abad ke-21.
+  </p>
+
+  <p>
+    Di sejumlah kota besar, misalnya Jakarta, Bandung, dan Surabaya, sekolah-sekolah negeri maupun swasta telah mulai 
+    menerapkan kurikulum dengan model asesmen yang lebih fleksibel. Guru diberikan ruang untuk menyesuaikan metode 
+    pengajaran, tidak hanya mengandalkan ujian tertulis, melainkan juga penilaian projek, presentasi, dan portofolio siswa.
+  </p>
+
+  <p>
+    Namun, kondisi berbeda tampak di banyak daerah terpencil. Guru di wilayah timur Indonesia, seperti Nusa Tenggara Timur 
+    dan Papua, mengaku masih kesulitan mengikuti pelatihan daring karena keterbatasan jaringan internet. 
+    Fasilitas sekolah, mulai dari laboratorium hingga perangkat digital, masih belum memadai untuk mendukung penerapan 
+    pembelajaran berbasis projek.
+  </p>
+
+  <p>
+    Ketua Persatuan Guru Republik Indonesia (PGRI) beberapa kali menegaskan perlunya peningkatan kapasitas tenaga pendidik. 
+    “Kebijakan Merdeka Belajar baik, tetapi implementasinya akan timpang jika guru tidak dibekali pelatihan memadai,” ujar 
+    salah satu pengurus PGRI dalam sebuah diskusi publik di Jakarta, Maret 2024.
+  </p>
+
+  <p>
+    Dari sisi kebijakan, pemerintah menyalurkan dana bantuan operasional sekolah (BOS) yang dapat dipakai untuk mendukung 
+    pembelajaran inovatif. Namun, laporan lapangan menunjukkan bahwa sebagian besar dana BOS masih digunakan untuk kebutuhan 
+    rutin, seperti gaji honorer dan perawatan gedung, sehingga ruang untuk inovasi kurikulum terbatas.
+  </p>
+
+  <p>
+    Peneliti pendidikan dari Universitas Negeri Yogyakarta, Dr. Anisa Rahma, menilai perlu ada sinergi yang lebih kuat 
+    antara pusat dan daerah. “Jangan hanya berhenti pada perubahan kurikulum. Guru harus didampingi secara berkelanjutan, 
+    dan pemerintah daerah harus memastikan infrastruktur dasar tersedia,” katanya.
+  </p>
+
+  <p>
+    Dengan demikian, meski kebijakan Merdeka Belajar dinilai sebagai langkah maju dalam dunia pendidikan Indonesia, 
+    realisasi di lapangan masih menghadapi kesenjangan nyata. Dukungan pelatihan, infrastruktur, dan pengawasan penggunaan 
+    anggaran menjadi kunci agar transformasi pendidikan tidak hanya berhenti di atas kertas.
+  </p>
+
+  <div class="meta-line" style="margin-bottom:12px">
+    <span class="tag">Kebijakan</span>
+    <span class="tag">Kemdikbudristek</span>
+  </div>
+
+  <a class="readmore" href="#article-merdeka">Baca laporan lapangan</a>
+</div>
+   
+
+        <a class="readmore" href="#article-merdeka">Baca laporan lapangan</a>
+      </div>
+
+      <aside class="side-card" aria-labelledby="sideTitle">
+        <h3 id="sideTitle">Sorotan</h3>
+        <div class="card-list">
+          <div class="card-item"><div class="thumb">BOS</div><div><strong>Alokasi BOS 2024</strong><div style="color:var(--muted);font-size:13px">Pemerintah menyalurkan dana BOS ke sekolah dasar dan menengah.</div></div></div>
+          <div class="card-item"><div class="thumb">Daring</div><div><strong>Kesenjangan akses</strong><div style="color:var(--muted);font-size:13px">Akses internet masih timpang antar wilayah.</div></div></div>
+          <div class="card-item"><div class="thumb">Riset</div><div><strong>Pemulihan pembelajaran</strong><div style="color:var(--muted);font-size:13px">Upaya pemulihan pasca-COVID terus berjalan.</div></div></div>
+        </div>
+      </aside>
+    </section>
+
+    <main class="grid">
+      <section>
+        <div style="display:flex;justify-content:space-between;align-items:end;margin-bottom:10px">
+          <h3 style="font-size:18px">Berita Terbaru</h3>
+          <div style="color:var(--muted);font-size:13px">Tema: Pendidikan Indonesia</div>
+        </div>
+
+        <div class="articles" id="articles">
+          
+          <article class="card" id="article-merdeka">
+            <h4>Merdeka Belajar: Fleksibilitas kurikulum, tantangan di lapangan</h4>
+            <p>
+              Dalam beberapa kota, sekolah sudah menerapkan kelas berbasis projek dan asesmen yang lebih fleksibel. Namun pengajar di daerah terpencil masih menghadapi keterbatasan sumber daya dan pelatihan.
+            </p>
+            <div class="meta-line">
+              <span>Reporter: R. Sari</span>
+              <a class="tag" href="#source-merdeka" onclick="openSource(event,'source-merdeka')">Sumber</a>
+            </div>
+          </article>
+
+          
+          <article class="card" id="article-bos">
+            <h4>Pemerintah salurkan anggaran BOS—apa yang berubah pada 2024?</h4>
+            <p>
+              Alokasi dana BOS untuk 2024 difokuskan pada operasional sekolah dasar hingga menengah. Sebagian sekolah melaporkan percepatan penyaluran untuk kebutuhan pembelajaran tatap muka.
+            </p>
+            <div class="meta-line">
+              <span>Reporter: A. Hakim</span>
+              <a class="tag" href="#source-bos" onclick="openSource(event,'source-bos')">Sumber</a>
+            </div>
+          </article>
+
+          
+          <article class="card" id="article-learning">
+            <h4>Learning loss: Jejak pandemi dan upaya pemulihan</h4>
+            <p>
+              Studi lapangan menunjukkan adanya penurunan capaian literasi dan numerasi akibat pembelajaran daring. Program pemulihan di beberapa daerah menargetkan intervensi literasi sejak SD.
+            </p>
+            <div class="meta-line">
+              <span>Reporter: F. Putra</span>
+              <a class="tag" href="#source-learning" onclick="openSource(event,'source-learning')">Sumber</a>
+            </div>
+          </article>
+
+          <!-- Artikel 4 -->
+          <article class="card" id="article-digital">
+            <h4>Kesenjangan digital: Akses internet belum merata</h4>
+            <p>
+              Meskipun penetrasi internet nasional meningkat, wilayah pedesaan dan timur Indonesia masih mencatat tingkat konektivitas yang jauh lebih rendah dibanding kota besar.
+            </p>
+            <div class="meta-line">
+              <span>Reporter: L. Widya</span>
+              <a class="tag" href="#source-digital" onclick="openSource(event,'source-digital')">Sumber</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <aside class="sidebar" aria-label="Sidebar">
+        <div class="search" role="search" aria-label="Cari artikel">
+          <label for="q" style="display:block;margin-bottom:8px;font-weight:600">Cari</label>
+          <input id="q" placeholder="Ketik kata kunci (mis. BOS, Merdeka Belajar)" />
+        </div>
+
+        <div class="popular">
+          <h4>Populer</h4>
+          <ol style="margin-top:8px;color:var(--muted);padding-left:18px">
+            <li>Uji coba kurikulum lokal</li>
+            <li>Kelangkaan guru di daerah terpencil</li>
+            <li>Subsidi internet untuk sekolah</li>
+          </ol>
+        </div>
+
+        <div class="subscribe" style="background:var(--card);padding:12px;border-radius:10px">
+          <h4>Langganan buletin</h4>
+          <p style="color:var(--muted);font-size:13px">Dapatkan ringkasan mingguan via email (contoh proyek).</p>
+          <input id="email" placeholder="email@contoh.com" style="width:100%;padding:8px;border-radius:8px;border:1px solid #eee;margin-top:8px"/>
+          <button id="subBtn" style="margin-top:8px;padding:8px 10px;border-radius:8px;border:0;background:var(--accent);color:#fff;font-weight:600;width:100%">Daftar</button>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <div>© Pendidikan Nusantara — Situs contoh untuk tugas KKA. Konten berbasis sumber lapangan dan riset.</div>
+    </footer>
+  </div>
+
+  
+  <div id="modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);align-items:center;justify-content:center;padding:20px">
+    <div style="max-width:900px;width:100%;background:#fff;border-radius:10px;padding:18px;position:relative">
+      <button onclick="closeModal()" style="position:absolute;right:12px;top:12px;border:0;background:#eee;padding:6px;border-radius:6px">Tutup</button>
+      <div id="modalContent" style="max-height:70vh;overflow:auto"></div>
+    </div>
+  </div>
+
+  <script>
+    
+    document.getElementById('updatedAt').textContent = new Date().toLocaleString('id-ID', {
+      weekday:'long', year:'numeric', month:'long', day:'numeric', hour:'2-digit', minute:'2-digit'
+    });
+
+    
+    const sources = {
+      'source-merdeka': {
+        title: 'Merdeka Belajar - laporan Kebijakan (Kemdikbudristek)',
+        url: 'https://jendela.kemdikbud.go.id/', 
+        note: 'Ringkasan: implementasi Merdeka Belajar menunjukkan variasi antar daerah; penguatan kurikulum dan asesmen terus didorong.'
+      
+      },
+      'source-bos': {
+        title: 'Alokasi Dana BOSP / BOS 2024 - Laporan Antara',
+        url: 'https://www.antaranews.com/berita/3919836/pemerintah-kucurkan-dana-rp57-triliun-untuk-bosp-tahun',
+        note: 'Catatan: Pemerintah mengalokasikan dana BOS untuk TA 2024, termasuk percepatan penyaluran di beberapa daerah.'
+        
+      },
+      'source-learning': {
+        title: 'Studi Learning Loss & pemulihan pembelajaran',
+        url: 'https://riseprogramme.org/sites/default/files/2022-04/Indonesia_Learning_Loss_Learning_Gain.pdf',
+        note: 'Beberapa studi lapangan menemukan penurunan capaian literasi/numerasi setelah pembelajaran daring; program pemulihan sedang dijalankan.'
+        
+      },
+      'source-digital': {
+        title: 'Kesenjangan akses digital di daerah terpencil (APJII / artikel analisis)',
+        url: 'https://digitaldesa.id/artikel/menghapus-kesenjangan-teknologi-peran-edukasi-digital-di-daerah-terpencil',
+        note: 'Data menunjukkan penetrasi internet nasional tinggi, namun akses di pedesaan jauh lebih rendah dibanding kota besar.'
+        
+      }
+    };
+
+    function openSource(e, id){
+      e.preventDefault();
+      const s = sources[id];
+      const c = document.getElementById('modalContent');
+      c.innerHTML = `<h3 style="margin-bottom:6px">${s.title}</h3>
+                     <p style="color:#666;margin-bottom:8px">${s.note}</p>
+                     <p style="font-size:13px;color:#444">Lihat sumber asli: <a href="${s.url}" target="_blank" rel="noopener noreferrer">${s.url}</a></p>`;
+      document.getElementById('modal').style.display = 'flex';
+    }
+    function closeModal(){ document.getElementById('modal').style.display = 'none'; }
+
+    
+    document.getElementById('q').addEventListener('input', function(){
+      const q = this.value.toLowerCase().trim();
+      const cards = document.querySelectorAll('#articles article.card');
+      cards.forEach(card => {
+        const text = (card.innerText || '').toLowerCase();
+        card.style.display = text.includes(q) ? '' : 'none';
+      });
+    });
+
+    
+    document.getElementById('subBtn').addEventListener('click', function(){
+      const email = document.getElementById('email').value.trim();
+      if(!email || !email.includes('@')) {
+        alert('Masukkan email valid untuk berlangganan (contoh).');
+        return;
+      }
+      alert('Terima kasih — (simulasi) langganan aktif untuk ' + email);
+      document.getElementById('email').value = '';
+    });
+  </script>
+</body>
+</html>
